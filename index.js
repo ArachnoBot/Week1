@@ -1,4 +1,5 @@
 let container = document.createElement("div")
+container.classList.add("container")
 document.body.appendChild(container)
 
 for (let i = 0; i < 5; i++) {
