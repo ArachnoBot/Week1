@@ -12,7 +12,7 @@
     box-shadow: 0px 0px 10px;
 }
 .img-container {
-    width: 960px;
+    max-width: 960px;
 }
 .wiki-content {
     padding: 20px
