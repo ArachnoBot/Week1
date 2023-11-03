@@ -25,9 +25,11 @@
 }
 
 .wiki-text {
-    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
 }
 
 .img-container {
-    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
 }
