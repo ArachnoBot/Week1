@@ -30,6 +30,10 @@ function addItem(headText) {
     imgContainer.classList.add("img-container")
     content.appendChild(imgContainer)
 
+    let img = document.createElement("img")
+    imgContainer.classList.add("wiki-img")
+    imgContainer.appendChild(img)
+
 }
 
 
