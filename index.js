@@ -2,19 +2,20 @@ let container = document.createElement("div")
 container.classList.add("container")
 document.body.appendChild(container)
 
-for (let i = 0; i < 5; i++) {
-    addItem()
+const list = [["Staffordshire Bullterrier", "bullterrier"], ["Beagle", "beagle"], ["Finnish lapphund", "finnish"], ["Boxer", "boxer"], ["Corgi", "corgi"]]
+
+for (dog of list) {
+    addItem(dog[0], dog[1])
 }
 
-function addItem(headText) {
-
+function addItem(headerText, imgName) {
     let item = document.createElement("div")
     item.classList.add("wiki-item")
     container.appendChild(item)
 
     let header = document.createElement("h1")
     header.classList.add("wiki-header")
-    header.textContent = "Breed X"
+    header.textContent = headerText
     item.appendChild(header)
 
     let content = document.createElement("div")
@@ -32,8 +33,18 @@ function addItem(headText) {
 
     let img = document.createElement("img")
     img.classList.add("wiki-img")
+    getImgUrl(img, imgName)
     imgContainer.appendChild(img)
+    
 
+
+
+}
+
+async function getImgUrl(img, dog) {
+    const response = await fetch("https://dog.ceo/api/breed/" + dog + "/images/random")
+    const data = await response.json()
+    img.src = data.message
 }
 
 
