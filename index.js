@@ -31,7 +31,7 @@ function addItem(headText) {
     content.appendChild(imgContainer)
 
     let img = document.createElement("img")
-    imgContainer.classList.add("wiki-img")
+    img.classList.add("wiki-img")
     imgContainer.appendChild(img)
 
 }
