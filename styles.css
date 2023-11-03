@@ -17,22 +17,22 @@
     margin: 0 auto;
 }
 .wiki-content {
-    padding: 20px
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.wiki-text {
+    width: 50%;
+}
+
+.img-container {
+    width: 50%;
 }
 
 @media screen and (min-width: 600px) {
-    .wiki-text {
-        width: 50%;
-    }
 
-    .img-container {
-        width: 50%;
-    }
 
-    .wiki-content {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-    }
 }
