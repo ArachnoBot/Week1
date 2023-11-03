@@ -16,11 +16,9 @@
     max-width: 960px;
     margin: 0 auto;
 }
+
 .wiki-content {
     margin: 0 auto;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
     padding: 20px;
 }
 
@@ -32,4 +30,12 @@
 .img-container {
     min-width: 50%;
     max-width: 50%;
+}
+
+@media screen and (min-width: 600px) {
+    .wiki-content {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
 }
